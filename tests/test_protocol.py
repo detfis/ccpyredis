@@ -1,5 +1,5 @@
 import pytest
-from protocol import SimpleString, extract_frame_from_buffer
+from pyredis.protocol import SimpleString, extract_frame_from_buffer
 
 
 @pytest.mark.parametrize("buffer, expected", [
