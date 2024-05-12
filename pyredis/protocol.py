@@ -58,3 +58,7 @@ def extract_frame_from_buffer(buffer):
                     return None, 0
             return Array(array), separator + _MSG_SEPARATOR_LENGTH
     return None, 0
+
+
+def encode_message(message):
+    return message.resp_encode()
